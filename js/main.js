@@ -51,7 +51,7 @@ btnPlay.addEventListener("click", () => {
     end = setInterval(function () {
         timer++;
         console.log(timer);
-        if (timer === 5) {
+        if (timer === 30) {
             clearInterval(end)
             rowEl.classList.add("d-none")
         }
@@ -71,7 +71,7 @@ btnPlay.addEventListener("click", () => {
         }
         scoreEl.innerHTML = `Your Score is ${score}`;
         rowEl.classList.remove("d-none");
-    }, 6000);
+    }, 31000);
 
 
 });
